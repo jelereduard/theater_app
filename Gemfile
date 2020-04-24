@@ -6,7 +6,7 @@ git_source(:github) do |repo_name|
 end
 ruby '2.7.1'
 
-gem 'rails',                   '5.2.4'
+gem 'rails', '~> 5.2.4', '>= 5.2.4.2'
 gem 'bcrypt',                  '3.1.12'
 gem 'faker'
 gem 'bootstrap-sass',          '3.3.7'
@@ -23,6 +23,8 @@ gem 'simple_form'
 gem 'devise', '~> 4.4'
 gem "haml"
 gem 'cancancan'
+gem 'bootsnap', '>= 1.1.0', require: false
+
 
 group :development, :test do
   gem 'byebug',  '9.0.6', platform: :mri
@@ -32,7 +34,7 @@ group :development do
   gem 'web-console',           '3.5.1'
   gem 'listen',                '3.1.5'
   gem 'spring'       
-  gem 'spring-watcher-listen'
+  gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
 group :test do
