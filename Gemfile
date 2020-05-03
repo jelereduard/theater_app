@@ -25,7 +25,6 @@ gem "haml"
 gem 'cancancan'
 gem 'bootsnap', '>= 1.1.0', require: false
 
-
 group :development, :test do
   gem 'byebug',  '9.0.6', platform: :mri
 end
